@@ -1,0 +1,14 @@
+on:
+  push
+
+jobs:
+  build:
+    name: deploy to staging
+    runs-on: macos-11
+    steps:
+    - uses: actions/checkout@v4.0
+    - name: checkout source
+
+    - name: build
+      run: make -j 4
+    

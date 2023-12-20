@@ -6,7 +6,6 @@ jobs:
     name: deploy to staging
     runs-on: macos-11
     steps:
-    - name: checkout source
     - uses: actions/checkout@v4.0
 
     - name: build
